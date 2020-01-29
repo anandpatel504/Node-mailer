@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NodeMailer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRB0jSFbrp4df_VdNVSQ60TywGaGjhXeb_XLtuD9u10I6WCuzV3"
+      type="image/icon type"
+	/>
+	<link type="css/text" href="./Mail.css">
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      .header {
+        background-color: blue;
+        color: white;
+        padding: 2px;
+        text-align: center;
+      }
+      .main {
+        background-color: #7eceba;
+        text-align: center;
+        border: 2px solid black;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: -10px;
+
+      }
+      .table input {
+        width: 60%;
+        height: 40px;
+      }
+      .table button {
+        background-color: blue; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 60px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+      }
+      .access {
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+      }
+      @media only screen and (max-width: 600px) {
+        .main{
+          margin-left: 1%;
+          margin-right: 1%;
+        }
+        .table input {
+        width: 80%;
+        height: 40px;
+      }
+      p{
+        font-size: 15px;
+      }
+}
+      
+    </style>
+  </head>
+  <div>
+    <div class="header">
+      <h2>NodeMailer</h2>
+    </div>
+
+    <div class="access">
+      <h4>
+        Hello, Allow less secure apps: ON<a
+          href="https://myaccount.google.com/lesssecureapps?pli=1"
+          target="blanck"
+        >
+          Open</a
+        >
+      </h4>
+      <p>(This is necessary to allow your less secure app)</p>
+    </div>
+    <div style="padding:3%">
+    <div class="main">
+      <form class="table" action="/mail" method="POST">
+        <h2>Your name :</h2>
+        <input type="name" name="name" placeholder="Your Name...." />
+        <h2>Your Email :</h2>
+        <input type="email" name="user" placeholder="Your Email...." />
+        <h2>Your Password :</h2>
+        <input
+          type="password"
+          name="password"
+          placeholder="Your Password...."
+        />
+        <h2>Send To :</h2>
+        <input
+          type="email"
+          name="emailid"
+          placeholder="all@gmail.com, anand18@navgurukul.org"
+        />
+        <h2>Subject :</h2>
+        <input type="subject" name="subject" placeholder="Subject...." />
+        <h2>Body :</h2>
+        <input type="Body" name="text" placeholder="Text...." /> <br /><br />
+        <button type="submit" onclick="">Submit</button>
+        <br /><br />
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

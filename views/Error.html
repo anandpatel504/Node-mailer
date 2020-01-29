@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>There is an error! please check it!</title>
+  </head>
+  <body>
+    <script>
+      swal({
+        title: "Error!",
+        text: "There is an error! please check it!",
+        icon: "error"
+      }).then(function() {
+        // Redirect the user
+        window.location.href = "/";
+      });
+    </script>
+  </body>
+</html>

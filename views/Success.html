@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Mail Sended Successfully.</title>
+  </head>
+  <body>
+    <script>
+      swal({
+        title: "Success!",
+        text: "Mail Sended Successfully.!",
+        icon: "success"
+      }).then(function() {
+        // Redirect the user
+        window.location.href = "/";
+      });
+    </script>
+  </body>
+</html>
